@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2FF13C46D972BAB880901ED6 /* Pods_iOSDataChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE2BB37E5D86449BD30F547 /* Pods_iOSDataChart.framework */; };
 		EE0D2E5A1CCA34EA00AEE2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D2E591CCA34EA00AEE2A1 /* AppDelegate.swift */; };
-		EE0D2E5C1CCA34EA00AEE2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D2E5B1CCA34EA00AEE2A1 /* ViewController.swift */; };
 		EE0D2E5F1CCA34EA00AEE2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D2E5D1CCA34EA00AEE2A1 /* Main.storyboard */; };
 		EE0D2E611CCA34EA00AEE2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0D2E601CCA34EA00AEE2A1 /* Assets.xcassets */; };
 		EE0D2E641CCA34EA00AEE2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D2E621CCA34EA00AEE2A1 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		EE0D2E7A1CCA34EA00AEE2A1 /* iOSDataChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D2E791CCA34EA00AEE2A1 /* iOSDataChartUITests.swift */; };
 		EE4E603D1CCA3C9A0009CED9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E603C1CCA3C9A0009CED9 /* Charts.framework */; };
 		EE4E603E1CCA3C9A0009CED9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E603C1CCA3C9A0009CED9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771961CCA91E200636DE0 /* MainpagesController.swift */; };
+		EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,6 @@
 		EAE2BB37E5D86449BD30F547 /* Pods_iOSDataChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDataChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D2E561CCA34EA00AEE2A1 /* iOSDataChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDataChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D2E591CCA34EA00AEE2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE0D2E5B1CCA34EA00AEE2A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE0D2E5E1CCA34EA00AEE2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE0D2E601CCA34EA00AEE2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0D2E631CCA34EA00AEE2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		EE0D2E791CCA34EA00AEE2A1 /* iOSDataChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDataChartUITests.swift; sourceTree = "<group>"; };
 		EE0D2E7B1CCA34EA00AEE2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE4E603C1CCA3C9A0009CED9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Charts.framework; path = "/Users/Top/Library/Developer/Xcode/DerivedData/iOSDataChart-cvvdeoyuwtcrnbedhjolfzkfxoig/Build/Products/Debug-iphonesimulator/Charts.framework"; sourceTree = "<absolute>"; };
+		EEE771961CCA91E200636DE0 /* MainpagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpagesController.swift; sourceTree = "<group>"; };
+		EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManpagesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +142,13 @@
 		EE0D2E581CCA34EA00AEE2A1 /* iOSDataChart */ = {
 			isa = PBXGroup;
 			children = (
+				EEE771951CCA919400636DE0 /* CustomCell */,
 				EE0D2E591CCA34EA00AEE2A1 /* AppDelegate.swift */,
-				EE0D2E5B1CCA34EA00AEE2A1 /* ViewController.swift */,
 				EE0D2E5D1CCA34EA00AEE2A1 /* Main.storyboard */,
 				EE0D2E601CCA34EA00AEE2A1 /* Assets.xcassets */,
 				EE0D2E621CCA34EA00AEE2A1 /* LaunchScreen.storyboard */,
 				EE0D2E651CCA34EA00AEE2A1 /* Info.plist */,
+				EEE771961CCA91E200636DE0 /* MainpagesController.swift */,
 			);
 			path = iOSDataChart;
 			sourceTree = "<group>";
@@ -166,6 +169,14 @@
 				EE0D2E7B1CCA34EA00AEE2A1 /* Info.plist */,
 			);
 			path = iOSDataChartUITests;
+			sourceTree = "<group>";
+		};
+		EEE771951CCA919400636DE0 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,8 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0D2E5C1CCA34EA00AEE2A1 /* ViewController.swift in Sources */,
+				EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */,
 				EE0D2E5A1CCA34EA00AEE2A1 /* AppDelegate.swift in Sources */,
+				EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,26 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ePi-7b-Wb1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Mainpages-->
+        <scene sceneID="8js-IK-QN0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSDataChart" sceneMemberID="viewController">
+                <tableViewController title="Mainpages" id="TIU-ye-Qxr" customClass="MainpagesController" customModule="iOSDataChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="oH2-zr-RlF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainpagesCell" textLabel="5ac-xV-rKx" detailTextLabel="TzS-PF-Lal" imageView="rGT-wK-mYv" rowHeight="54" style="IBUITableViewCellStyleSubtitle" id="1XP-S9-QUi" customClass="ManpagesCell" customModule="iOSDataChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1XP-S9-QUi" id="EM4-O2-Gds">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="53.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5ac-xV-rKx" userLabel="TitleLabel">
+                                            <rect key="frame" x="84" y="11" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TzS-PF-Lal" userLabel="DetailLabel">
+                                            <rect key="frame" x="84" y="30.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="help" id="rGT-wK-mYv" userLabel="ImageView">
+                                            <rect key="frame" x="15" y="0.0" width="54" height="53.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DetailLabel" destination="TzS-PF-Lal" id="TcO-pw-siI"/>
+                                    <outlet property="ImageView" destination="rGT-wK-mYv" id="crU-Im-zm7"/>
+                                    <outlet property="TitleLabel" destination="5ac-xV-rKx" id="8Tj-Nu-ZZr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="TIU-ye-Qxr" id="O9G-0K-0Jt"/>
+                            <outlet property="delegate" destination="TIU-ye-Qxr" id="Bx8-GT-Jvk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dra-ds-N13"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGg-Sj-g6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="423"/>
+        </scene>
+        <!--WattChart-->
+        <scene sceneID="kRl-CE-R7X">
+            <objects>
+                <viewController id="mYz-Ya-Hiq" userLabel="WattChart" customClass="ViewController" customModule="iOSDataChart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="gdb-f6-3fH"/>
+                        <viewControllerLayoutGuide type="bottom" id="XBC-gA-OMm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="PrE-dN-Emf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItE-nK-IbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1033" y="146"/>
+        </scene>
+        <!--UnitChart-->
+        <scene sceneID="mLH-TS-7Cb">
+            <objects>
+                <viewController id="AQp-el-d2H" userLabel="UnitChart" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vsQ-LA-Jtc"/>
+                        <viewControllerLayoutGuide type="bottom" id="hjZ-ff-8JG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bEN-Ij-F9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7y-uS-DyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="841"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Voe-yn-ulR">
+            <objects>
+                <navigationController id="ePi-7b-Wb1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3i0-Yz-Zj1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TIU-ye-Qxr" kind="relationship" relationship="rootViewController" id="5Xc-bG-xii"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZZ-Pm-Ykw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-421" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="help" width="120" height="120"/>
+    </resources>
 </document>
