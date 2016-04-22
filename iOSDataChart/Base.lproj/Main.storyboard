@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainpagesCell" textLabel="5ac-xV-rKx" detailTextLabel="TzS-PF-Lal" imageView="rGT-wK-mYv" rowHeight="54" style="IBUITableViewCellStyleSubtitle" id="1XP-S9-QUi" customClass="ManpagesCell" customModule="iOSDataChart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="54"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1XP-S9-QUi" id="EM4-O2-Gds">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="53.5"/>
@@ -58,30 +58,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGg-Sj-g6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="423"/>
+            <point key="canvasLocation" x="287" y="429"/>
         </scene>
         <!--WattChart-->
         <scene sceneID="kRl-CE-R7X">
             <objects>
-                <viewController id="mYz-Ya-Hiq" userLabel="WattChart" customClass="ViewController" customModule="iOSDataChart" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gdb-f6-3fH"/>
-                        <viewControllerLayoutGuide type="bottom" id="XBC-gA-OMm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PrE-dN-Emf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                <viewController id="mYz-Ya-Hiq" userLabel="WattChart" customClass="BarDemoViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1Hw-e7-Rnw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItE-nK-IbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="146"/>
+            <point key="canvasLocation" x="994" y="135"/>
         </scene>
         <!--UnitChart-->
         <scene sceneID="mLH-TS-7Cb">
             <objects>
-                <viewController id="AQp-el-d2H" userLabel="UnitChart" sceneMemberID="viewController">
+                <viewController id="AQp-el-d2H" userLabel="UnitChart" customClass="BarChartViewController" customModule="iOSDataChart" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vsQ-LA-Jtc"/>
                         <viewControllerLayoutGuide type="bottom" id="hjZ-ff-8JG"/>
@@ -89,8 +81,18 @@
                     <view key="view" contentMode="scaleToFill" id="bEN-Ij-F9Y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KD9-uF-7jk" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DoO-5A-Ig4"/>
+                    <connections>
+                        <outlet property="barChartView" destination="KD9-uF-7jk" id="O8B-XL-llY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7y-uS-DyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="TIU-ye-Qxr" kind="relationship" relationship="rootViewController" id="5Xc-bG-xii"/>
+                        <segue destination="AQp-el-d2H" kind="relationship" relationship="rootViewController" id="6Bv-Q8-4Qx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZZ-Pm-Ykw" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,8 @@
 		EE4E603E1CCA3C9A0009CED9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E603C1CCA3C9A0009CED9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771961CCA91E200636DE0 /* MainpagesController.swift */; };
 		EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */; };
+		EEE7719F1CCAB34100636DE0 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */; };
+		EEE771A11CCAB74A00636DE0 /* Demos in Resources */ = {isa = PBXBuildFile; fileRef = EEE771A01CCAB74A00636DE0 /* Demos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		EE4E603C1CCA3C9A0009CED9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Charts.framework; path = "/Users/Top/Library/Developer/Xcode/DerivedData/iOSDataChart-cvvdeoyuwtcrnbedhjolfzkfxoig/Build/Products/Debug-iphonesimulator/Charts.framework"; sourceTree = "<absolute>"; };
 		EEE771961CCA91E200636DE0 /* MainpagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpagesController.swift; sourceTree = "<group>"; };
 		EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManpagesCell.swift; sourceTree = "<group>"; };
+		EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartViewController.swift; path = ../../../../Downloads/iOSChartsDemo/iOSChartsDemo/BarChartViewController.swift; sourceTree = "<group>"; };
+		EEE771A01CCAB74A00636DE0 /* Demos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Demos; path = "../../Charts-master/ChartsDemo-OSX/ChartsDemo-OSX/Demos"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 		EE0D2E581CCA34EA00AEE2A1 /* iOSDataChart */ = {
 			isa = PBXGroup;
 			children = (
+				EEE771A01CCAB74A00636DE0 /* Demos */,
+				EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */,
 				EEE771951CCA919400636DE0 /* CustomCell */,
 				EE0D2E591CCA34EA00AEE2A1 /* AppDelegate.swift */,
 				EE0D2E5D1CCA34EA00AEE2A1 /* Main.storyboard */,
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0D2E641CCA34EA00AEE2A1 /* LaunchScreen.storyboard in Resources */,
+				EEE771A11CCAB74A00636DE0 /* Demos in Resources */,
 				EE0D2E611CCA34EA00AEE2A1 /* Assets.xcassets in Resources */,
 				EE0D2E5F1CCA34EA00AEE2A1 /* Main.storyboard in Resources */,
 			);
@@ -363,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */,
+				EEE7719F1CCAB34100636DE0 /* BarChartViewController.swift in Sources */,
 				EE0D2E5A1CCA34EA00AEE2A1 /* AppDelegate.swift in Sources */,
 				EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */,
 			);
