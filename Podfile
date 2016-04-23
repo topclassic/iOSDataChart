@@ -8,6 +8,7 @@ target 'iOSDataChart' do
 	pod 'Realm', '~> 0.98'
 	pod 'Charts', '~> 2.2'
 	
+	
 end
 
 target 'iOSDataChartTests' do

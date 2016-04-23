@@ -11,7 +11,7 @@ import RealmSwift
 
 class MainpagesController: UITableViewController{
     
-    
+    var AlertDialogGraph: UIAlertController?
     var textTitle = ["Graph", "Setting Name", "Setting Limit", "Help"]
     var textNote = ["View electric power with graph","You can set name for outlet", "You can set limit for outlet","Helper"]
     var imageImages = [UIImage(named: "graph"),UIImage(named: "tool"),UIImage(named: "meter"),UIImage(named: "help")]
@@ -27,7 +27,7 @@ class MainpagesController: UITableViewController{
         // Dispose of any resources that can be recreated.
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-         let cell = self.tableView.dequeueReusableCellWithIdentifier("MainpagesCell", forIndexPath: indexPath) as! ManpagesCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("MainpagesCell", forIndexPath: indexPath) as! ManpagesCell
         cell.TitleLabel?.text = textTitle[indexPath.row]
         cell.DetailLabel?.text = textNote[indexPath.row]
         cell.ImageView.image = imageImages[indexPath.row]
@@ -38,6 +38,10 @@ class MainpagesController: UITableViewController{
         return textTitle.count
     }
     
-    
+    @IBAction func AlertDialogGraph(sender: AnyObject){
+        AlertDialogGraph = UIAlertController(title: "Select Day, Month, Year", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        
+            
+    }
     
 }
