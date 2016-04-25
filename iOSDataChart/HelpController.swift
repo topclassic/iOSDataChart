@@ -9,6 +9,6 @@
 import UIKit
 import RealmSwift
 
-class HelpController: UITableViewController {
+class HelpController: UIViewController {
     
 }

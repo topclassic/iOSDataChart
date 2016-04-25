@@ -41,7 +41,24 @@ class MainpagesController: UITableViewController{
     @IBAction func AlertDialogGraph(sender: AnyObject){
         AlertDialogGraph = UIAlertController(title: "Select Day, Month, Year", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         
-            
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "ShowExistingNote"){
+          //  let MainpagesController = segue.destinationViewController as! SettingNameController
+
+        }
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath){
+        if(indexPath.row == 0){
+            self.performSegueWithIdentifier("ShowSettingName", sender: self)
+        }else if(indexPath.row == 1 ){
+            self.performSegueWithIdentifier("ShowSettingName", sender: self)
+        }else if(indexPath.row == 2 ){
+            self.performSegueWithIdentifier("ShowSettingLimit", sender: self)
+        }else if(indexPath.row == 3 ){
+            self.performSegueWithIdentifier("ShowHelp", sender: self)
+        }
     }
     
 }

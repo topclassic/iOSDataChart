@@ -22,6 +22,8 @@
 		EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771961CCA91E200636DE0 /* MainpagesController.swift */; };
 		EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */; };
 		EEE7719F1CCAB34100636DE0 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */; };
+		EEFE809C1CCDB92300B8A810 /* SettingNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE809B1CCDB92300B8A810 /* SettingNameCell.swift */; };
+		EEFE809E1CCDC03800B8A810 /* SettingLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE809D1CCDC03800B8A810 /* SettingLimitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		EEE771961CCA91E200636DE0 /* MainpagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpagesController.swift; sourceTree = "<group>"; };
 		EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManpagesCell.swift; sourceTree = "<group>"; };
 		EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartViewController.swift; path = ../../../../Downloads/iOSChartsDemo/iOSChartsDemo/BarChartViewController.swift; sourceTree = "<group>"; };
+		EEFE809B1CCDB92300B8A810 /* SettingNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNameCell.swift; sourceTree = "<group>"; };
+		EEFE809D1CCDC03800B8A810 /* SettingLimitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLimitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				EEE771981CCA93AF00636DE0 /* ManpagesCell.swift */,
+				EEFE809B1CCDB92300B8A810 /* SettingNameCell.swift */,
+				EEFE809D1CCDC03800B8A810 /* SettingLimitCell.swift */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -378,9 +384,11 @@
 				EECB2AFE1CCB0DDC00466568 /* HelpController.swift in Sources */,
 				EEE771991CCA93AF00636DE0 /* ManpagesCell.swift in Sources */,
 				EECB2AFC1CCB0DC600466568 /* SettingLimitController.swift in Sources */,
+				EEFE809E1CCDC03800B8A810 /* SettingLimitCell.swift in Sources */,
 				EEE7719F1CCAB34100636DE0 /* BarChartViewController.swift in Sources */,
 				EE0D2E5A1CCA34EA00AEE2A1 /* AppDelegate.swift in Sources */,
 				EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */,
+				EEFE809C1CCDB92300B8A810 /* SettingNameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
