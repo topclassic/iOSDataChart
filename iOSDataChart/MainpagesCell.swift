@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class ManpagesCell: UITableViewCell {
+class MainpagesCell: UITableViewCell {
     @IBOutlet var ImageView: UIImageView!
     @IBOutlet var TitleLabel: UILabel!
     @IBOutlet var DetailLabel: UILabel!

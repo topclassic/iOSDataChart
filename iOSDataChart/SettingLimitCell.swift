@@ -11,8 +11,9 @@ import RealmSwift
 
 class SettingLimitCell: UITableViewCell {
     @IBOutlet var ImageView: UIImageView!
-    @IBOutlet var TitleLabel: UILabel!
-    @IBOutlet var DetailLabel: UILabel!
+    @IBOutlet var OutletName: UILabel!
+    @IBOutlet var Power: UILabel!
+    @IBOutlet var Limit: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

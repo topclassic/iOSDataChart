@@ -27,7 +27,7 @@ class MainpagesController: UITableViewController{
         // Dispose of any resources that can be recreated.
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("MainpagesCell", forIndexPath: indexPath) as! ManpagesCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("MainpagesCell", forIndexPath: indexPath) as! MainpagesCell
         cell.TitleLabel?.text = textTitle[indexPath.row]
         cell.DetailLabel?.text = textNote[indexPath.row]
         cell.ImageView.image = imageImages[indexPath.row]
@@ -37,11 +37,7 @@ class MainpagesController: UITableViewController{
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return textTitle.count
     }
-    
-    @IBAction func AlertDialogGraph(sender: AnyObject){
-        AlertDialogGraph = UIAlertController(title: "Select Day, Month, Year", message: "", preferredStyle: UIAlertControllerStyle.Alert)
-        
-    }
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "ShowExistingNote"){
           //  let MainpagesController = segue.destinationViewController as! SettingNameController
@@ -51,7 +47,7 @@ class MainpagesController: UITableViewController{
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath){
         if(indexPath.row == 0){
-            self.performSegueWithIdentifier("ShowSettingName", sender: self)
+            self.performSegueWithIdentifier("ShowGraph", sender: self)
         }else if(indexPath.row == 1 ){
             self.performSegueWithIdentifier("ShowSettingName", sender: self)
         }else if(indexPath.row == 2 ){

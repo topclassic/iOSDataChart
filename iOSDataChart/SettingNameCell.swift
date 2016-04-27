@@ -11,8 +11,8 @@ import RealmSwift
 
 class SettingNameCell: UITableViewCell {
     @IBOutlet var ImageView: UIImageView!
-    @IBOutlet var TitleLabel: UILabel!
-    @IBOutlet var DetailLabel: UILabel!
+    @IBOutlet var OutletID: UILabel!
+    @IBOutlet var OutletName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -20,4 +20,6 @@ class SettingNameCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    
 }
