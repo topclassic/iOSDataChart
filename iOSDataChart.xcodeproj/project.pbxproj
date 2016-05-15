@@ -15,14 +15,14 @@
 		EE0D2E6F1CCA34EA00AEE2A1 /* iOSDataChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D2E6E1CCA34EA00AEE2A1 /* iOSDataChartTests.swift */; };
 		EE0D2E7A1CCA34EA00AEE2A1 /* iOSDataChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D2E791CCA34EA00AEE2A1 /* iOSDataChartUITests.swift */; };
 		EE14A4AF1CCE5795000924DC /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14A4AE1CCE5795000924DC /* GraphController.swift */; };
-		EE4E603D1CCA3C9A0009CED9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E603C1CCA3C9A0009CED9 /* Charts.framework */; };
-		EE4E603E1CCA3C9A0009CED9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E603C1CCA3C9A0009CED9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EECB2AFA1CCB0D7800466568 /* SettingNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB2AF91CCB0D7800466568 /* SettingNameController.swift */; };
 		EECB2AFC1CCB0DC600466568 /* SettingLimitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB2AFB1CCB0DC600466568 /* SettingLimitController.swift */; };
 		EECB2AFE1CCB0DDC00466568 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB2AFD1CCB0DDC00466568 /* HelpController.swift */; };
 		EEE771971CCA91E200636DE0 /* MainpagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771961CCA91E200636DE0 /* MainpagesController.swift */; };
 		EEE771991CCA93AF00636DE0 /* MainpagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE771981CCA93AF00636DE0 /* MainpagesCell.swift */; };
 		EEE7719F1CCAB34100636DE0 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */; };
+		EEEA657D1CD1F01D00ED4673 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA657C1CD1F01D00ED4673 /* Charts.framework */; };
+		EEEA657E1CD1F01D00ED4673 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA657C1CD1F01D00ED4673 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EEFE809C1CCDB92300B8A810 /* SettingNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE809B1CCDB92300B8A810 /* SettingNameCell.swift */; };
 		EEFE809E1CCDC03800B8A810 /* SettingLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE809D1CCDC03800B8A810 /* SettingLimitCell.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EE4E603E1CCA3C9A0009CED9 /* Charts.framework in Embed Frameworks */,
+				EEEA657E1CD1F01D00ED4673 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,13 +75,13 @@
 		EE0D2E791CCA34EA00AEE2A1 /* iOSDataChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDataChartUITests.swift; sourceTree = "<group>"; };
 		EE0D2E7B1CCA34EA00AEE2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE14A4AE1CCE5795000924DC /* GraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
-		EE4E603C1CCA3C9A0009CED9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Charts.framework; path = "/Users/Top/Library/Developer/Xcode/DerivedData/iOSDataChart-cvvdeoyuwtcrnbedhjolfzkfxoig/Build/Products/Debug-iphonesimulator/Charts.framework"; sourceTree = "<absolute>"; };
 		EECB2AF91CCB0D7800466568 /* SettingNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNameController.swift; sourceTree = "<group>"; };
 		EECB2AFB1CCB0DC600466568 /* SettingLimitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLimitController.swift; sourceTree = "<group>"; };
 		EECB2AFD1CCB0DDC00466568 /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		EEE771961CCA91E200636DE0 /* MainpagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpagesController.swift; sourceTree = "<group>"; };
 		EEE771981CCA93AF00636DE0 /* MainpagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpagesCell.swift; sourceTree = "<group>"; };
 		EEE7719E1CCAB34100636DE0 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartViewController.swift; path = ../../../../Downloads/iOSChartsDemo/iOSChartsDemo/BarChartViewController.swift; sourceTree = "<group>"; };
+		EEEA657C1CD1F01D00ED4673 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Charts.framework; path = "/Users/Top/Library/Developer/Xcode/DerivedData/iOSDataChart-cvvdeoyuwtcrnbedhjolfzkfxoig/Build/Products/Debug-iphoneos/Charts.framework"; sourceTree = "<absolute>"; };
 		EEFE809B1CCDB92300B8A810 /* SettingNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNameCell.swift; sourceTree = "<group>"; };
 		EEFE809D1CCDC03800B8A810 /* SettingLimitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLimitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF13C46D972BAB880901ED6 /* Pods_iOSDataChart.framework in Frameworks */,
-				EE4E603D1CCA3C9A0009CED9 /* Charts.framework in Frameworks */,
+				EEEA657D1CD1F01D00ED4673 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 		EE0D2E4D1CCA34EA00AEE2A1 = {
 			isa = PBXGroup;
 			children = (
-				EE4E603C1CCA3C9A0009CED9 /* Charts.framework */,
+				EEEA657C1CD1F01D00ED4673 /* Charts.framework */,
 				EE0D2E581CCA34EA00AEE2A1 /* iOSDataChart */,
 				EE0D2E6D1CCA34EA00AEE2A1 /* iOSDataChartTests */,
 				EE0D2E781CCA34EA00AEE2A1 /* iOSDataChartUITests */,
@@ -272,6 +272,7 @@
 				TargetAttributes = {
 					EE0D2E551CCA34EA00AEE2A1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GDLT6CW827;
 					};
 					EE0D2E691CCA34EA00AEE2A1 = {
 						CreatedOnToolsVersion = 7.3;
@@ -537,10 +538,13 @@
 			baseConfigurationReference = 98307DB2C79AA0B2A07DC670 /* Pods-iOSDataChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDataChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = topz.iOSDataChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -549,10 +553,13 @@
 			baseConfigurationReference = 0D21DF54CC70E34E39561B05 /* Pods-iOSDataChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDataChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = topz.iOSDataChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
